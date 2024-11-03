@@ -1,0 +1,32 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topnav">
+    <a onclick="returnListPage()"><i class="fa fa-book"></i></a>
+    <div class="search-container">
+      <form class="navForm">
+        <input type="text" id="searchTerm" placeholder="Search.." name="search">
+        <button type="button" onclick="searchButton()"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <p id="errMsg"></p>
+  <table  class="bookTable">
+    <thead>
+      <tr>
+        <th>title</th>
+        <th>author</th>
+        <th>year</th>
+        <th>genre</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="searchTable"></tbody>
+  </table>
+</body>
+<script src="scripts/main.js"></script>
+</html>
